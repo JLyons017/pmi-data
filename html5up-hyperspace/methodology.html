@@ -16,10 +16,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">PMI Data</a>
+				<a href="home.html" class="title">New Survey of Firms' Expectations</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="home.html">Home</a></li>
 						<li><a href="data.html">Data</a></li>
 						<li><a href="methodology.html"class="active">Methodology</a></li>
 						<li><a href="aboutus.html">About Us</a></li>
@@ -34,8 +34,333 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Methodology</h1>
-							<p>This is how we collected the data.</p>
+							<h1 class="major">Weights-Building Process</h1>
+							<p>The survey was conducted by IHS Markit, global leader in data analysis and information services. Among its products, they have Purchasing Managers Index (PMI), one of the most influential business surveys worldwide. The PMI data has the particularity of identifying the turning points in the business cycles prior to the publication of the official data, and closely monitoring changes in important macroeconomic variables, such as product, demand, prices and employment.</p>
+							<p>To carry out the survey of this study, PMI survey built a panel that represents the underlying structure of each sector in the economy according to its contribution to the gross value added. Companies are classified into small, medium and large. Small companies have between 1 and 19 employees, medium companies have between 20 and 249 employees while large companies have over 250 employees.</p>
+							<p>The sector classification of companies is based on the ISIC divisions, and the survey considers companies from the manufacturing sector and the service sector. Within the manufacturing sector, companies are classified in Food & Drink, Textiles & Clothing, Electrical, Chemicals & Plastics, Transport, Timber & Paper, Basic Metals, Mechanical Engineering and Other Manufacturing. Within the services sector, the companies are classified in Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities and Other Services.</p>
+							<p>The expansion factors used by PMI were not provided to the researchers, so it was necessary to perform a reverse engineering process to build weights that make the survey representative at the gross value added level. The distribution of economic data by company size and industry was obtained from Statistics of U.S. Census Bureau business. It has variables such as number of firms, number of establishments, employment, and annual payroll. The data is grouped by geographic area, industry, and employment size of the enterprise. The sector classification is based on 2012 North American Industry Classification System (NAICS).<sup>1</sup></p>
+							<p>As our survey uses the ISIC classification while the national distribution provided by the statistical offices uses the NAICS classification, it was necessary to make a concordance between both industrial classification systems.<sup>2</sup> Table 1 provides detailed descriptions of the concordance between classification systems.</p>
+							<p>Finally, our survey’s companies and Census Bureau companies were classified into 7 categories: Manufacturing, Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities and Other Services. According to the number of employees, companies are classified into small (between 1 and 19 employees), medium (between 20 and 249 employees) and large (over 250 employees) so 21 weights were built in total.</p>
+							<p>As the purpose of PMI survey is to obtain a representative sample of companies to the contribution that each sector makes to overall gross value added, weights were built to make our survey representative of the annual payroll distribution observed in national accounts, understanding payroll as a proxy of gross value added.</p>
+							<h3>Table 1: Concordance between ISIC and NAICS classification systems</h3>
+							<table style="width:110%">
+								<tr>
+									<th> </th>
+									<th>ISIC-Division</th>
+									<th>NAICS 2-Digit Sector</th>
+									<th>Category</th>
+								</tr>
+								<tr>
+									<td><b>Manufacturing</b></td>
+								</tr>
+								<tr>
+									<td>Food & Drink</td>
+									<td>10-12</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Textiles & Clothing</td>
+									<td>13-15</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Electrical</td>
+									<td>26-27</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Chemicals & Plastics</td>
+									<td>19-22</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Transport</td>
+									<td>29-30</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Timber & Paper</td>
+									<td>16-17</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Basic Metals</td>
+									<td>24-25</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Mechanical Engineering</td>
+									<td>28</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td>Other Manufacturing</td>
+									<td>Any code not covered by the above</td>
+									<td>31-33</td>
+									<td>Manufacturing</td>
+								</tr>
+								<tr>
+									<td><b>Services</b></td>
+								</tr>
+								<tr>
+									<td>Hotels & Restaurants</td>
+									<td>55-56</td>
+									<td>72</td>
+									<td>Hotels & Restaurants</td>
+								</tr>
+								<tr>
+									<td>Transport & Storage</td>
+									<td>49-52</td>
+									<td>48-49</td>
+									<td>Transport & Storage</td>
+								</tr>
+								<tr>
+									<td>Post & Telecommunication</td>
+									<td>53/58-59/61</td>
+									<td>51</td>
+									<td>Post & Telecommunication</td>
+								</tr>
+								<tr>
+									<td>Financial Intermediation</td>
+									<td>64-66</td>
+									<td>52</td>
+									<td>Financial Intermediation</td>
+								</tr>
+								<tr>
+									<td>Renting & Business Activities</td>
+									<td>60/62-63/68-69/70-75/77-82</td>
+									<td>53-56</td>
+									<td>Renting & Business Activities</td>
+								</tr>
+								<tr>
+									<td>Other Services</td>
+									<td>Other ISIC not mentioned above</td>
+									<td>61-62/71/81</td>
+									<td>Other Services</td>
+								</tr>
+							</table>
+							<p>Table 2 shows in detail the weights-building process. The annual payroll was calculated by economic sector and company size (column (1)). Then, the fraction of annual payroll over the total was calculated (column (2)). On the other hand, the fraction of companies in the survey belonging to each classification was determined (column (4)). The weight was calculated by dividing (2) into (4).</p>
+							<h3>Table 2: Weights-Building process</h3>
+							<table style="width:110%">
+								<tr>
+									<th>Category</th>
+									<th>Size</th>
+									<th>Annual Payroll ($1000) (1)</th>
+									<th>Prop. Payroll (%) (2)</th>
+									<th># of Firms in our Survey (3)</th>
+									<th>Prop. Firms (%) (4)</th>
+									<th>Weight Payroll (5)</th>
+								</tr>
+								<tr>
+									<td>Manufacturing</td>
+									<td>Small</td>
+									<td>42,449,131</td>
+									<td>0.8</td>
+									<td>325</td>
+									<td>26.3</td>
+									<td>0.03</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>155,187,964</td>
+									<td>3.1</td>
+									<td>242</td>
+									<td>19.6</td>
+									<td>0.16</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>466,097,004</td>
+									<td>9.2</td>
+									<td>88</td>
+									<td>7.1</td>
+									<td>1.29</td>
+								</tr>
+								<tr>
+									<td>Hotels & Restaurants</td>
+									<td>Small</td>
+									<td>43,906,402</td>
+									<td>0.9</td>
+									<td>13</td>
+									<td>1.1</td>
+									<td>0.82</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>91,946,626</td>
+									<td>1.8</td>
+									<td>10</td>
+									<td>0.8</td>
+									<td>2.24</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>125,407,621</td>
+									<td>2.5</td>
+									<td>17</td>
+									<td>1.4</td>
+									<td>1.79</td>
+								</tr>
+								<tr>
+									<td>Transport & Storage</td>
+									<td>Small</td>
+									<td>22,117,982</td>
+									<td>0.4</td>
+									<td>16</td>
+									<td>1.3</td>
+									<td>0.34</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>37,952,526</td>
+									<td>0.7</td>
+									<td>19</td>
+									<td>1.5</td>
+									<td>0.49</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>169,092,046</td>
+									<td>3.3</td>
+									<td>8</td>
+									<td>0.6</td>
+									<td>5.14</td>
+								</tr>
+								<tr>
+									<td>Post & Telecommunication</td>
+									<td>Small</td>
+									<td>14,459,970</td>
+									<td>0.3</td>
+									<td>12</td>
+									<td>1.0</td>
+									<td>0.29</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>36,630,379</td>
+									<td>0.7</td>
+									<td>3</td>
+									<td>0.2</td>
+									<td>2.97</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>266,410,676</td>
+									<td>5.2</td>
+									<td>5</td>
+									<td>0.4</td>
+									<td>12.95</td>
+								</tr>
+								<tr>
+									<td>Financial Intermediation</td>
+									<td>Small</td>
+									<td>43,410,347</td>
+									<td>0.9</td>
+									<td>41</td>
+									<td>3.3</td>
+									<td>0.26</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>80,230,227</td>
+									<td>1.6</td>
+									<td>25</td>
+									<td>2.1</td>
+									<td>0.78</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>488,096,776</td>
+									<td>9.6</td>
+									<td>17</td>
+									<td>1.4</td>
+									<td>6.98</td>
+								</tr>
+								<tr>
+									<td>Renting & Business Activities</td>
+									<td>Small</td>
+									<td>217,707,560</td>
+									<td>4.3</td>
+									<td>124</td>
+									<td>10.0</td>
+									<td>0.43</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>306,233,328</td>
+									<td>6.0</td>
+									<td>83</td>
+									<td>6.7</td>
+									<td>0.90</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>1,134,513,283</td>
+									<td>22.3</td>
+									<td>34</td>
+									<td>2.8</td>
+									<td>8.11</td>
+								</tr>
+								<tr>
+									<td>Other Services</td>
+									<td>Small</td>
+									<td>218,349,200</td>
+									<td>4.3</td>
+									<td>32</td>
+									<td>2.6</td>
+									<td>1.66</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Medium</td>
+									<td>297,301,944</td>
+									<td>5.9</td>
+									<td>74</td>
+									<td>6.0</td>
+									<td>0.98</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Large</td>
+									<td>818,932,392</td>
+									<td>16.1</td>
+									<td>46</td>
+									<td>3.7</td>
+									<td>4.33</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td> </td>
+									<td>507,643,379</td>
+									<td> </td>
+									<td>12</td>
+									<td> </td>
+									<td> </td>
+								</tr>
+							</table>
+							<p><i>Source</i>: 2016 County Business Patterns and author's survey.</p>
+							<p><sup>1</sup> The database "U.S. & States, NAICS, detailed employment sizes (U.S., 6-digit and states, NAICS sectors)" available at <a target="_blank" href="https://www.census.gov/data/datasets/2016/econ/susb/2016-susb.html">https://www.census.gov/data/datasets/2016/econ/susb/2016-susb.html</a> was used.</p>
+							<p><sup>2</sup> The concordance was built largely using the tables provided by the Census Bureau that include detailed descriptions of the direct relationships between classification systems. Information is available at <a target="_blank" href="https://www.census.gov/eos/www/naics/concordances/concordances.html">https://www.census.gov/eos/www/naics/concordances/concordances.html</a>.</p>
 						</div>
 					</section>
 
