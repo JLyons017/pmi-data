@@ -258,6 +258,35 @@ input, select, textarea {
 		margin-top: 20px;
 	}
 
+	#percentageexplanation {
+		margin-top: 80px;
+	}
+
+	.dropdown {
+
+	}
+
+	.dropdown-container {
+		position: absolute;
+		display: none;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.dropdown-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		flex: 1 !important;
+		display: block !important;
+	}
+
+	.dropdown:hover .dropdown-container {display: block;}
+
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -3396,7 +3425,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 3em 2em;
 	}
 
 		#header > .title {

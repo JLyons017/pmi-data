@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Methodology</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">New Survey of Firms' Expectations</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="data.html">Data</a></li>
+						<li class="dropdown"><a href="methodology.html"class="active">Methodology</a>
+							<div class="dropdown-container">
+								<div class="dropdown-content">
+									<a href="surveydescription.html">Survey Description</a>
+									<a href="datacleaning.html">Data-Cleaning Process</a>
+									<a href="weightsbuilding.html">Weights-Building Process</a>
+								</div>
+							</div>
+						</li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Data-Cleaning Process</h1>
+							<h3>For each question, there are the following variables:</h3>
+							<p><b>1. Id:</b> ID of the firm.</p>
+							<p><b>2. Raw:</b> complete responses of interviewees.</p>
+							<p><b>3. Clean:</b> cleaned responses of interviewees.</p>
+							<p><b>4. Upper:</b> an upper limit of interviewees’ responses.</p>
+							<p><b>5. Lower:</b> a lower limit of interviewees’ responses.</p>
+							<p><b>6. Flag:</b> the subgroup which the responses belong to.</p>
+							<p><b>7. Panel:</b> manufacturing (Manufacturing, Electronics_Manu, Metals_Manu) or services.</p>
+							<p><b>8. SicDescription:</b> the industry classification of companies, based on the ISIC divisions.</p>
+							<p><b>9. CompanySize:</b> the companies are classified into small (1 to 19 employees), medium (20 to 249 employees) and large (over 250 employees).</p>
+							<h3>We categorize responses into eight subgroups, and label them in "flag":</h3>
+							<p><b>1.	Points:</b> if the interviewee gives a specific number, we put the number in “clean” (in percentage).</p>
+							<p><b>2.	Range:</b> if the interviewee gives both an upper bound and a lower bound, we put the upper and lower bounds in the corresponding column and get the average value in “clean.”</p>
+							<p><b>3.	Upperbound:</b> if the interviewee gives only an upper bound, we put the upper bound in “Upper” and put “upperbound” in flag.</p>
+							<p><b>4.	Lowerbound:</b> if the interviewee gives only a lower bound, we put the lower bound in “Lower” and put “lowerbound” in flag.</p>
+							<p><b>5.	Unsure:</b> if the interviewee is unsure, then we put “unsure” in flag.</p>
+							<p><b>6.	Unknown:</b> if the interviewee doesn’t know the answer—for example, he might say “idk”—then we put “unknown” in flag.</p>
+							<p><b>7.	Increase/Decrease/Unchanged:</b> if the interviewee said the value will change from its preceding value—for example, she might say “increase for 2%” or “unchanged”—we will put “increase,” “decrease,” or “unchanged” in “flag.”</p>
+							<p><b>8.	No answer:</b> there is no answer for the question (“not available” or “unusable response”).</p>
+							<p id=percentageexplanation>If the answer is less than 0.2, it is assumed that it corresponds to a percentage. For example, when asked, "what do you think will be the inflation rate (for the Consumer Price Index) over the next 12 months?" if the answer is 0.1, it is recorded in clean as 10, and corresponds to an inflation rate over the next 12 months of 10%.</p>
+							<p>Once each survey was cleaned, the master file was constructed by combining all the waves. There are two versions of the master file – one with weights and one without weights. This is because there are occasions where the classification (sector or size) may change for a responding company. In the case of employment, changes may occur due to lay-offs, growth, or potentially acquisition where the activity/staff have been moved to the location. Similarly, the SIC may change due to significant changes in the operation of the company. There are also a few (rare) occasions where changes in the SIC classification system itself result in a 3- or 4-digit SIC being moved to a different branch and leading to a change in the classification of the company at the broader sector level. When a company changes its classification (sector or size), it is considered as two different companies for the weights-building process.</p>
+							<p>Useful responses were considered to be the responses classified in the first stage as "point" or "range." We use the flag "." in this case. Responses classified as "unsure" and "unknown" were reclassified as don’t know ("DK"). The "no answer" answers were classified as "NA." The rest of the answers (lowerbound, upperbound, increase/decrease/unchanged) were classified as "other."</p>
+							<h3>Master File Without Weights</h3>
+							<p>The master file has the following variables:</p>
+							<p><b>ID:</b> ID of the firm.</p>
+							<p><b>wx_epi_12m:</b> answer to the first question in wave x.</p>
+							<p><b>flagx_epi_12m:</b> type of response (“.”, “DK”, “NA”, “other”) to the first question in wave x.</p>
+							<p><b>wx_q2:</b> answer to the second question in wave x.</p>
+							<p><b>flagx_q2:</b> type of response (“.”, “DK”, “NA”, “other”) to the second question in wave x.</p>
+							<h3>Master File With Weights</h3>
+							<p>The master file (with weights) has the following variables:</p>
+							<p><b>New_ID:</b> ID of the firm.</p>
+							<p><b>wx_epi_12m:</b> answer to the first question in wave x.</p>
+							<p><b>flagx_epi_12m:</b> type of response (“.”, “DK”, “NA”, “other”) to the first question in wave x.</p>
+							<p><b>wx_q2:</b> answer to the second question in wave x.</p>
+							<p><b>flagx_q2:</b> type of response (“.”, “DK”, “NA”, “other”) to the second question in wave x.</p>
+							<p><b>ID:</b> original firm’s ID.</p>
+							<p><b>Panel:</b> manufacturing (Manufacturing, Electronics_Manu, Metals_Manu) or services.</p>
+							<p><b>SicDescription:</b> the industry classification of companies, based on the ISIC divisions.</p>
+							<p><b>CompanySize:</b> the companies are classified into small (1 to 19 employees), medium (20 to 249 employees), and large (over 250 employees).</p>
+							<p><b>Weight:</b> weight for employment.</p>
+							<p><b>Weight2:</b> weight for total payroll.</p>
+							<p><b>Category_Label:</b> categories used for the construction of weights. Our survey’s companies were classified into 7 categories: Manufacturing, Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities, and Other Services, so 21 different weights were built (by sector and company size).</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
