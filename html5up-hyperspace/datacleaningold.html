@@ -66,7 +66,27 @@
 							<p id=percentageexplanation>If the answer is less than 0.2, it is assumed that it corresponds to a percentage. For example, when asked, "what do you think will be the inflation rate (for the Consumer Price Index) over the next 12 months?" if the answer is 0.1, it is recorded in clean as 10, and corresponds to an inflation rate over the next 12 months of 10%.</p>
 							<p>Once each survey was cleaned, the master file was constructed by combining all the waves. There are two versions of the master file – one with weights and one without weights. This is because there are occasions where the classification (sector or size) may change for a responding company. In the case of employment, changes may occur due to lay-offs, growth, or potentially acquisition where the activity/staff have been moved to the location. Similarly, the SIC may change due to significant changes in the operation of the company. There are also a few (rare) occasions where changes in the SIC classification system itself result in a 3- or 4-digit SIC being moved to a different branch and leading to a change in the classification of the company at the broader sector level. When a company changes its classification (sector or size), it is considered as two different companies for the weights-building process.</p>
 							<p>Useful responses were considered to be the responses classified in the first stage as "point" or "range." We use the flag "." in this case. Responses classified as "unsure" and "unknown" were reclassified as don’t know ("DK"). The "no answer" answers were classified as "NA." The rest of the answers (lowerbound, upperbound, increase/decrease/unchanged) were classified as "other."</p>
-							<h4>For a downloadable codebook of variable descriptions for each file, click <a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/codebook.pdf' target="_blank">here</a>.</h4>
+							<h3>Master File Without Weights</h3>
+							<p>The master file has the following variables:</p>
+							<p><b>ID:</b> ID of the firm.</p>
+							<p><b>wx_epi_12m:</b> answer to the first question in wave x.</p>
+							<p><b>flagx_epi_12m:</b> type of response (“.”, “DK”, “NA”, “other”) to the first question in wave x.</p>
+							<p><b>wx_q2:</b> answer to the second question in wave x.</p>
+							<p><b>flagx_q2:</b> type of response (“.”, “DK”, “NA”, “other”) to the second question in wave x.</p>
+							<h3>Master File With Weights</h3>
+							<p>The master file (with weights) has the following variables:</p>
+							<p><b>New_ID:</b> ID of the firm.</p>
+							<p><b>wx_epi_12m:</b> answer to the first question in wave x.</p>
+							<p><b>flagx_epi_12m:</b> type of response (“.”, “DK”, “NA”, “other”) to the first question in wave x.</p>
+							<p><b>wx_q2:</b> answer to the second question in wave x.</p>
+							<p><b>flagx_q2:</b> type of response (“.”, “DK”, “NA”, “other”) to the second question in wave x.</p>
+							<p><b>ID:</b> original firm’s ID.</p>
+							<p><b>Panel:</b> manufacturing (Manufacturing, Electronics_Manu, Metals_Manu) or services.</p>
+							<p><b>SicDescription:</b> the industry classification of companies, based on the ISIC divisions.</p>
+							<p><b>CompanySize:</b> the companies are classified into small (1 to 19 employees), medium (20 to 249 employees), and large (over 250 employees).</p>
+							<p><b>Weight:</b> weight for employment.</p>
+							<p><b>Weight2:</b> weight for total payroll.</p>
+							<p><b>Category_Label:</b> categories used for the construction of weights. Our survey’s companies were classified into 7 categories: Manufacturing, Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities, and Other Services, so 21 different weights were built (by sector and company size).</p>
 						</div>
 					</section>
 

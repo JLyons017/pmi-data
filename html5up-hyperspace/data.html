@@ -21,8 +21,17 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="data.html" class="active">Data</a></li>
-						<li><a href="methodology.html">Methodology</a></li>
+						<li class="dropdown"><a href="methodology.html">Methodology</a>
+							<div class="dropdown-container">
+								<div class="dropdown-content">
+									<a href="surveydescription.html">Survey Description</a>
+									<a href="datacleaning.html">Data-Cleaning Process</a>
+									<a href="weightsbuilding.html">Weights-Building Process</a>
+								</div>
+							</div>
+						</li>
 						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="publications.html">Publications</a></li>
 						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
@@ -38,8 +47,73 @@
 							<p>These are the data collected using our new survey method.</p>
 							<p>Click on the links to download the data.</p>
 							<p><a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/master_file_weights_example.dta' target="_blank">Master File Weights Example</a></p>
-							<p><a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/master_file_example.dta' target="_blank">Master File Example </a></p>
+							<p><a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/master_file_example.dta' target="_blank">Master File Example</a></p>
 							<p>Let me know if the links work!!</p>
+							<p>The following graph and table present the data for 12-month-ahead inflation expectations of surveyed firms. Hover over data points to see their values.</p>
+							<div class="progress-graph">
+								<div class="graph-container">
+              		<canvas id="inflationChart" responsive="false"></canvas>
+              	</div>
+							</div>
+							<p><a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/expectations_graph.pdf' target="_blank">Downloadable Image</a></p>
+							<table id="expectationstable" style="width:50%">
+								<tr>
+									<th> </th>
+									<th>Mean</th>
+									<th>SD</th>
+								</tr>
+								<tr>
+									<td>April 2018</td>
+									<td>3.4</td>
+									<td>1.7</td>
+								</tr>
+								<tr>
+									<td>July 2018</td>
+									<td>3.3</td>
+									<td>2.0</td>
+								</tr>
+								<tr>
+									<td>October 2018</td>
+									<td>3.3</td>
+									<td>1.7</td>
+								</tr>
+								<tr>
+									<td>January 2019</td>
+									<td>3.0</td>
+									<td>1.4</td>
+								</tr>
+								<tr>
+									<td>April 2019</td>
+									<td>2.2</td>
+									<td>1.1</td>
+								</tr>
+								<tr>
+									<td>July 2019</td>
+									<td>2.4</td>
+									<td>1.0</td>
+								</tr>
+								<tr>
+									<td>October 2019</td>
+									<td>2.1</td>
+									<td>1.2</td>
+								</tr>
+								<tr>
+									<td>January 2020</td>
+									<td>2.3</td>
+									<td>0.9</td>
+								</tr>
+								<tr>
+									<td>April 2020</td>
+									<td>2.6</td>
+									<td>2.2</td>
+								</tr>
+								<tr>
+									<td>July 2020</td>
+									<td>2.0</td>
+									<td>1.2</td>
+								</tr>
+							</table>
+							<p><a href='/Users/JakeLyons/Documents/Website/pmi-data/html5up-hyperspace/data/expectations_table.xlsx' target="_blank">Download</a> (Excel)</p>
 						</div>
 					</section>
 
@@ -62,6 +136,60 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+			<script>
+		    var ctx = document.getElementById("inflationChart").getContext('2d');
 
+		    var yData = [3.4, 3.3, 3.3, 3, 2.2, 2.4, 2.1, 2.3, 2.6, 2]; // array -> [12, 3, 5, 6]
+		    var dates = ["4/2018", "7/2018", "10/2018", "1/2019", "4/2019", "7/2019", "10/2019", "1/2020", "4/2020", "7/2020"];
+
+		    var inflationChart = new Chart(ctx, {
+		        type: 'line',
+		        data: {
+		            labels: dates, // x axis
+		            datasets: [{ // Name the series
+		                label: "Mean",
+										lineTension: 0,
+		                data: yData, // y axis
+		                fill: false,
+		                borderColor: 'black', // Add custom color border (Line)
+		                backgroundColor: 'blue', // Add custom color background (Points and Fill)
+		                borderWidth: 2,// Specify bar border width
+		                pointRadius: 6,
+		                pointHoverRadius: 6
+		            }]},
+		        options: {
+		        	legend: {
+		            display: false
+		         	},
+							title: {
+								display: true,
+								text: 'Mean 12-months-ahead Inflation Expectations, April 2018-July 2020'
+							},
+		          responsive: true, // Instruct chart js to respond nicely.
+		          maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+		          scales: {
+		                xAxes: [{
+		                    gridLines: {
+		                        display:true
+		                    }
+		                }],
+		                yAxes: [{
+		                    gridLines: {
+		                        display:true
+		                    },
+												scaleLabel: {
+													display: true,
+													labelString: 'Expected Inflation (%)'
+												},
+		                    ticks: {
+		                        min: 1.5,
+		                        max: 4
+		                    }
+		                }]
+		            }
+		        }
+		    });
+    	</script>
 	</body>
 </html>

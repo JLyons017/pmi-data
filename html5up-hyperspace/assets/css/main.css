@@ -262,6 +262,10 @@ input, select, textarea {
 		margin-top: 80px;
 	}
 
+	#expectationstable {
+		margin-top:30px;
+	}
+
 	.dropdown {
 
 	}
@@ -281,11 +285,22 @@ input, select, textarea {
 	}
 
 	.dropdown-content a {
-		flex: 1 !important;
-		display: block !important;
+		flex: 1;
+		display: block;
 	}
 
 	.dropdown:hover .dropdown-container {display: block;}
+
+	.graph-container {
+		height: 350px;
+		padding: 40px;
+		padding-top: 0px;
+	}
+
+	.progress-graph {
+		background-color: white;
+		width: 660px;
+	}
 
 	@media screen and (max-width: 736px) {
 
@@ -3425,7 +3440,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 3em 2em;
+		padding: 2.8em 2em;
 	}
 
 		#header > .title {
