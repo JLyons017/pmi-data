@@ -6,6 +6,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 272, 277, 3314, 3443*/
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -98,7 +100,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #f7f7ff; /*(Old: #312450) This is the color of the main part (body) of the webpage.*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -115,7 +117,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: #191516; /*(Old: rgba(255, 255, 255, 0.55)) This is the color of ordinary text.*/
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -151,18 +153,18 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		border-bottom: dotted 1px #0b3954; /*(Old: rgba(255, 255, 255, 0.35)) This is the color of link underlines.*/
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #db2b39; /*(Old: #ffffff) This is the color of link underlines.*/
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #191516; /*(Old: #ffffff) This is the color of bold text.*/
 		font-weight: bold;
 	}
 
@@ -175,7 +177,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #191516; /*(Old: #ffffff) This is the color of the headings (h1, h2, etc.).*/
 		font-weight: bold;
 		line-height: 1;
 		margin: 5em 0 0.5em 0;
@@ -197,10 +199,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #0b3954, #db2b39); /*(Old: #5e42a6, #b74e91) This is the color of the line below the main heading.*/
+				background-image: -webkit-linear-gradient(to right, #0b3954, #db2b39);
+				background-image: -ms-linear-gradient(to right, #0b3954, #db2b39);
+				background-image: linear-gradient(to right, #0b3954, #db2b39);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -266,8 +268,25 @@ input, select, textarea {
 		margin-top:30px;
 	}
 
-	.dropdown {
+	#lastpapertitle {
+		margin-bottom: 22.75%;
+	}
 
+	#nsfgrants {
+		margin-bottom: 15%;
+	}
+
+	#weightslink {
+		margin-bottom: 18.65%;
+	}
+
+	.tablecontainer {
+		background: #136290; /*This is the color of the tables.*/
+		padding-right: 50px;
+	}
+
+	.tablecontainer *{
+		color: #ffffff; /*This is the color of the text in the tables.*/
 	}
 
 	.dropdown-container {
@@ -292,14 +311,14 @@ input, select, textarea {
 	.dropdown:hover .dropdown-container {display: block;}
 
 	.graph-container {
-		height: 350px;
+		height: 500px;
 		padding: 40px;
 		padding-top: 0px;
 	}
 
 	.progress-graph {
 		background-color: white;
-		width: 660px;
+		width: 100%;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3304,7 +3323,9 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #072536; /*(Old: #261c3e) This is the color of the footer.*/
+			min-height: 100%;
+			margin-bottom: -50px;
 		}
 
 		.wrapper.style1 {
@@ -3438,7 +3459,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #0b3954; /*(Old: #5e42a6) This is the color of the header.*/
 		cursor: default;
 		padding: 2.8em 2em;
 	}
