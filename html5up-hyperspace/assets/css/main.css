@@ -6,7 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 272, 277, 3314, 3443*/
+/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 272, 277, 3314, and 3443.*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -250,6 +250,7 @@ input, select, textarea {
 
 	#YuriyDescription {
 		font-size: 0.96em;
+		margin-bottom: 50px;
 	}
 
 	#Footnote1 {
