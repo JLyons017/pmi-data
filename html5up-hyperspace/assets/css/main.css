@@ -246,11 +246,12 @@ input, select, textarea {
 
 	#OliDescription {
 		font-size: 0.96em;
+		margin-bottom: 3px;
 	}
 
 	#YuriyDescription {
 		font-size: 0.96em;
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 
 	#Footnote1 {
