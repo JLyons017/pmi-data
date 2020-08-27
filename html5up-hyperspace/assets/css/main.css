@@ -6,7 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 272, 277, 3314, and 3443.*/
+/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 290, 295, 3332, and 3468.*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -282,9 +282,13 @@ input, select, textarea {
 		margin-bottom: 18.65%;
 	}
 
+	#tablecaption {
+		font-size: 1.75em;
+	}
+
 	.tablecontainer {
 		background: #136290; /*This is the color of the tables.*/
-		padding-right: 50px;
+		padding-right: 100px;
 	}
 
 	.tablecontainer *{
