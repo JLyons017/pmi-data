@@ -58,7 +58,7 @@
 							<p>The following graph presents the data for 12-month-ahead inflation expectations of surveyed firms (survey question 1). Hover over data points to see their values.</p>
 							<div class="progress-graph">
 								<div class="graph-container">
-              		<canvas id="inflationChart" responsive="false"></canvas> <!-- Lines 51-55 are needed to get the graph to show up. The full code for the graph is down around lines 197-249.-->
+              		<canvas id="inflationChart" responsive="false"></canvas> <!-- Lines 59-63 are needed to get the graph to show up. The full code for the graph is down around lines 205-257.-->
               	</div>
 							</div>
 							<p><a href='/data/expectations_graph.pdf' target="_blank">Downloadable Image</a></p>
@@ -66,7 +66,7 @@
 							<div class="tablecontainer">
 								<table id="expectationstable" style="width:110%"> <!-- This is a table (I inputted the data manually). To make a table with larger datasets, you would need JavaScript to input the data for you. -->
 									<caption id="tablecaption">Inflation Forecasts of US Firms</caption>
-									<tr>
+									<tr> <!-- <tr> means "table row." Within each row is either <th> (table heading) or <td> (table data). -->
 										<th> </th>
 										<th style="text-align:center">Panel A: 1-year-ahead inflation forecasts, percentage points</th>
 										<th> </th>
@@ -213,7 +213,7 @@
 		            labels: dates, // x axis
 		            datasets: [{
 		                label: "Mean", // Name the series
-										lineTension: 0, //This makes the lines straight and not curved
+										lineTension: 0, // This makes the lines straight and not curved
 		                data: means, // y axis
 		                fill: false,
 		                borderColor: 'black', // Add custom color border (Line)

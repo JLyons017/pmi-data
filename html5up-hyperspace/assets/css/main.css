@@ -6,7 +6,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*Colors for the webpage can be found on lines 103, 120, 156, 163, 167, 180, 202-205, 290, 295, 3332, and 3468.*/
+/* This is a CSS file. CSS goes hand-in-hand with HTML to make the site look good. CSS is the source of all the colors, formatting, fonts, etc. You can ignore most of this file – I don't know what's going on, either. All I care about is that it works! */
+/* Most of the edits I made can be found between lines 241 and 330. Most of these were just general formatting touch-ups. If you want to make similar changes, I'd recommend putting them just after mine to stay organized. However, I don't think it actually matters where in the file you make the changes – just as long as you get the code correct! */
+/*Colors for the webpage can be found on lines 105, 122, 158, 165, 169, 182, 204-207, 292, 297, 3334, and 3470.*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -271,7 +273,7 @@ input, select, textarea {
 	}
 
 	#lastpapertitle {
-		margin-bottom: 22.75%;
+		margin-bottom: 16.1%;
 	}
 
 	#nsfgrants {
