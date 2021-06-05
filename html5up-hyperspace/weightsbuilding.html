@@ -52,76 +52,65 @@
 						<div class="inner">
 							<h1 class="major">Weights-Building Process</h1>
 							<p>To carry out the survey of this study, the firm survey built a panel that represents the underlying structure of each sector in the economy according to its contribution to the gross value added. Companies are classified into small, medium, and large. Small companies have between 1 and 19 employees, medium companies have between 20 and 249 employees, and large companies have over 250 employees.</p>
-							<p>The sector classification of companies is based on the ISIC divisions, and the survey considers companies from the manufacturing sector and the service sector. Within the manufacturing sector, companies are classified into Food & Drink, Textiles & Clothing, Electrical, Chemicals & Plastics, Transport, Timber & Paper, Basic Metals, Mechanical Engineering, and Other Manufacturing. Within the services sector, the companies are classified into Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities, and Other Services.</p>
+							<p>The sector classification of companies is based on the ISIC divisions, and the survey considers companies from the manufacturing sector and the service sector. Within the manufacturing sector, companies are classified into Food & Drink, Textiles & Clothing, Electrical, Chemicals & Plastics, Transport, Timber & Paper, Basic Metals, Mechanical Engineering, and Other Manufacturing. Within the manufacturing sector, companies are classified into Food and Drink; Textiles and Clothing; Electrical; Chemicals and Plastics; Transport; Timber and Paper; Basic Metals; Mechanical Engineering; and Other Manufacturing. Within the services sector, the companies are classified into Hotels and Restaurants; Transport and Storage; Post and Telecommunication; Financial Intermediation; Renting and Business Activities; and Other Services.</p>
 							<p>The expansion factors used by the firm survey were not provided to the researchers, so it was necessary to perform a reverse-engineering process to build weights that make the survey representative at the gross-value-added level. The distribution of economic data by company size and industry was obtained from the Census Bureau's Statistics of US Businesses (SUSB). It has variables such as number of firms, number of establishments, employment, and annual payroll. The data are grouped by geographic area, industry, and employment size of the enterprise. The sector classification is based on the 2012 North American Industry Classification System (NAICS).<sup>1</sup></p>
 							<p>As our survey uses the ISIC classification while the national distribution provided by the statistical offices uses the NAICS classification, it was necessary to make a concordance between both industrial classification systems.<sup>2</sup> Table 1 provides detailed descriptions of the concordance between classification systems.</p>
-							<p>Finally, our survey’s companies and the Census Bureau companies were classified into 7 categories: Manufacturing, Hotels & Restaurants, Transport & Storage, Post & Telecommunication, Financial Intermediation, Renting & Business Activities, and Other Services. According to the number of employees, companies are classified into small (between 1 and 19 employees), medium (between 20 and 249 employees), and large (over 250 employees), so 21 weights were built in total.</p>
-							<p>As the purpose of the firm survey is to obtain a representative sample of companies in order to reveal the contribution that each sector makes to overall gross value added, weights were built to make our survey representative of the annual payroll distribution observed in national accounts, understanding payroll as a proxy of gross value added. The weights by economic sector and company size were calculated as the ratio between the fraction of payroll in national accounts and the fraction of firms belonging to that classification in the survey.</p>
+							<p>As the purpose of the firm survey is to obtain a representative sample of companies in order to reveal the contribution that each sector makes to overall gross value added, weights were built to make our survey representative of the annual payroll distribution observed in national accounts, understanding payroll as a proxy of gross value added. The weights by economic sector and company size were calculated as the ratio between the fraction of payroll in national accounts and the fraction of firms belonging to that classification in the survey.<sup>3</sup></p>
 							<h3>Table 1: Concordance between ISIC and NAICS classification systems</h3>
 							<div class=tablecontainer>
 								<table style="width:110%">
 									<tr>
 										<th> </th>
 										<th>ISIC-Division</th>
-										<th>NAICS 2-Digit Sector</th>
-										<th>Category</th>
-									</tr>
+										<th>NAICS Digit Sector Codes</th>
+																	</tr>
 									<tr>
 										<td><b>MANUFACTURING</b></td>
 									</tr>
 									<tr>
 										<td>Food & Drink</td>
 										<td>10-12</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>311-312</td>
 									</tr>
 									<tr>
 										<td>Textiles & Clothing</td>
 										<td>13-15</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>313-316</td>
 									</tr>
 									<tr>
 										<td>Electrical</td>
 										<td>26-27</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>334-335</td>
 									</tr>
 									<tr>
 										<td>Chemicals & Plastics</td>
 										<td>19-22</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>324-326</td>
 									</tr>
 									<tr>
 										<td>Transport</td>
 										<td>29-30</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>336</td>
 									</tr>
 									<tr>
 										<td>Timber & Paper</td>
 										<td>16-17</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>321-322</td>
 									</tr>
 									<tr>
 										<td>Basic Metals</td>
 										<td>24-25</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>331-332</td>
 									</tr>
 									<tr>
 										<td>Mechanical Engineering</td>
 										<td>28</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>333</td>
 									</tr>
 									<tr>
 										<td>Other Manufacturing</td>
 										<td>Any code not covered by the above</td>
-										<td>31-33</td>
-										<td>Manufacturing</td>
+										<td>Any code not covered by the above</td>
 									</tr>
 									<tr>
 										<td><b>SERVICES</b></td>
@@ -130,42 +119,37 @@
 										<td>Hotels & Restaurants</td>
 										<td>55-56</td>
 										<td>72</td>
-										<td>Hotels & Restaurants</td>
 									</tr>
 									<tr>
 										<td>Transport & Storage</td>
 										<td>49-52</td>
 										<td>48-49</td>
-										<td>Transport & Storage</td>
 									</tr>
 									<tr>
 										<td>Post & Telecommunication</td>
 										<td>53/58-59/61</td>
 										<td>51</td>
-										<td>Post & Telecommunication</td>
 									</tr>
 									<tr>
 										<td>Financial Intermediation</td>
 										<td>64-66</td>
 										<td>52</td>
-										<td>Financial Intermediation</td>
 									</tr>
 									<tr>
 										<td>Renting & Business Activities</td>
 										<td>60/62-63/68-69/70-75/77-82</td>
 										<td>53-56</td>
-										<td>Renting & Business Activities</td>
 									</tr>
 									<tr>
 										<td>Other Services</td>
 										<td>Other ISIC not mentioned above</td>
 										<td>61-62/71/81</td>
-										<td>Other Services</td>
 									</tr>
 								</table>
 							</div>
 							<p id="Footnote1"><sup>1</sup> The database "U.S. & States, NAICS, detailed employment sizes (U.S., 6-digit and states, NAICS sectors)" available at <a target="_blank" href="https://www.census.gov/data/datasets/2016/econ/susb/2016-susb.html">https://www.census.gov/data/datasets/2016/econ/susb/2016-susb.html</a> was used.</p>
 							<p><sup>2</sup> The concordance was built largely using the tables provided by the Census Bureau that include detailed descriptions of the direct relationships between classification systems. Information is available at <a target="_blank" href="https://www.census.gov/eos/www/naics/concordances/concordances.html">https://www.census.gov/eos/www/naics/concordances/concordances.html</a>.</p>
+<sup>3</sup> For NAICS 2 Digit Sectors, one of the employment size categories is 200-299 employees. Given that medium companies in our survey have between 20 and 249 employees, we assume that half of the annual payroll (and number of firms) corresponds to medium companies and the other half to large companies. For NAICS 3 Digit Manufacturing Sector, we can observe the annual payroll of companies with 100-499 employees. Of this total, the fraction of annual payroll that corresponds to companies with between 100 and 249 employees in the manufacturing sector (NAICS 2 Digit) is assigned to medium companies, while the rest is assigned to large companies.</p>
 						</div>
 					</section>
 
